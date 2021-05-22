@@ -232,9 +232,37 @@ text-align: center;
     border-radius: 10px;
     border: 2px solid black;
 }
+#social-media{
+    display: flex;
+    padding-left: 100px;
+}
+#social-media a{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#one{
+    width: 200px;
+    height: 100px;
+}
+#two{
+    width: 300px;
+    height: 100px;
+}
+#three{
+    margin-top: 50px;
+    width: 250px;
+    height: 100px;
+}
+#social-media h2{
+    color: white;
+    padding-left: 50px;
+}
+#social-media a img:hover{
+    border: 5px solid black;
+}
 #footer{
     background:url('Images/bc.jpg') no-repeat center center/cover;
-    color: white;
+    color: #e74c3c;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -248,7 +276,7 @@ text-align: center;
         background-size: cover;
     }
     .menu a{display: none;}
-    .logo{padding-left: 50px;}
+    .logo{padding-left: 100px;}
     .text{
         color: white;
         margin-top: 50px;
@@ -304,7 +332,7 @@ text-align: center;
     }
 
     #project{
-        height: 160vh;
+        height: 180vh;
     }
     #project-row{
         display: flex;
@@ -321,5 +349,31 @@ text-align: center;
     }
     #project-row .p h2{
         font-size: 30px;
+    }
+    #social-media{
+        display: flex;
+        padding-left: 1px;
+    }
+    #social-media a{
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    #one{
+        width: 100px;
+        height: 50px;
+    }
+    #two{
+        width: 150px;
+        height: 50px;
+    }
+    #three{
+        margin-top: 50px;
+        width: 100px;
+        height: 50px;
+    }
+    #social-media h2{
+        color: white;
+        padding-left: 0px;
+        font-size: 20px;
     }
 }
