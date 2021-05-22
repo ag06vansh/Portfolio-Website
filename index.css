@@ -1,0 +1,325 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url('Images/background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    color:white;
+    font-size: 50px;
+    padding-right: 300px;
+    letter-spacing: 10px;
+}
+.logo span{
+    color: #e74c3c;
+}
+.menu{
+    margin-right: 10px;
+}
+.menu a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin:5px;
+}
+.menu a:hover{
+    background-color: #e74c3c;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.text{
+    color: white;
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
+    max-width: 100%;
+}
+.text span{
+    font-size: 50px;
+    margin: 10px 0px;
+}
+.text div{
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.c-btn{
+    border:none;
+    outline: none;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.c-btn:hover{
+    background-color: rgb(209, 161, 161);
+    color: black;
+}
+#about{
+    padding: 50px 50px;
+    background: url('Images/aa.jpg') no-repeat center center/cover;
+}
+.section-info{
+    font-weight: bold;
+    text-align: center;
+}
+#about h1{
+    font-size: 60px;
+    padding-left: 500px;
+}
+.section-info h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.section-info p{
+    font-size: 25px;
+    color: #e74c3c;
+}
+.about-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    flex-basis: 30%;
+}
+.about-left-col img{
+    width: 70%;
+    /* padding-left: 100px; */
+}
+.about-right-col{
+    flex-basis: 50%;
+}
+#p-title{
+    font-size: 30px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.about-right-col ul{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.about-right-col ul li{
+    padding: 10px;
+    text-align: justify;
+    font-weight: bold;
+}
+#skills{
+    padding: 50px 50px;
+    background: url('Images/bc.jpg') no-repeat center center/cover;
+    color: white;
+    background-attachment: fixed;
+}
+.skills-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.skills-left-col{
+    flex-basis: 50%;
+    text-align: center;
+}
+.skills-left-col ul{
+    font-size: 20px;
+    text-align: justify;
+}
+.skills-left-col ul li{
+    padding: 10px;
+}
+.skills-right-col{
+    flex-basis: 50%;
+}
+progress{
+    width: 80%;
+}
+.progress-div{
+    width: 90%;
+    margin: auto;
+}
+.progress-div p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 80px;
+}
+
+#project{
+    background: url('Images/aa.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 110vh;
+    padding: 50px 50px;
+}
+#project h1{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+#project-row{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+#project-row .p{
+    flex-basis: 48%;
+    padding: 30px 30px;
+    margin: 40px 20px;
+    border: 2px solid red;
+}
+#project-row .p ul{
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 25px;
+}
+#project-row .p h2{
+    font-size: 30px;
+}
+
+#contact{
+    padding: 100px 50px;
+    background: url('Images/background.jpg') no-repeat center center/cover;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#contact h1{
+    color: white;
+}
+.contact-row form{
+text-align: center;
+}
+.contact-row form input{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #862bdb;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.contact-row form textarea{
+    width: 50%;
+    padding: 10px;
+    color: #862bdb;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#footer{
+    background:url('Images/bc.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 770px)
+{
+    header{
+        background: url('Images/background.jpg');
+        background-size: cover;
+    }
+    .menu a{display: none;}
+    .logo{padding-left: 50px;}
+    .text{
+        color: white;
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        max-width: 100%;
+    }
+    #about h1{
+        font-size: 60px;
+        padding-left: 150px;
+        margin-bottom: 50px;
+        margin-top: 1px;
+    }
+    .about-left-col{
+        flex-basis: 100%;
+    }
+    .about-left-col img{
+        width: 100%;
+        padding-left:50px;
+    }
+    .about-right-col{
+        flex-basis: 100%;
+        padding-top: 50px;
+    }
+    .section-info h1{
+        font-size: 50px;
+        margin-bottom: 1px;
+    }
+    #skills{
+        padding: 50px 50px;
+    }
+    .skills-left-col{
+        flex-basis: 100%;
+    }
+    .skills-left-col ul{
+        margin-bottom: 30px;
+    }
+    .skills-right-col{
+        flex-basis: 100%;
+    }
+
+    progress{
+        width: 80%;
+    }
+    .progress-div{
+        width: 100%;
+        margin: auto;
+    }
+    .progress-div p{
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    #project{
+        height: 160vh;
+    }
+    #project-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding:10px;
+    }
+
+    #project-row .p ul{
+        font-size: 20px;
+        text-align: justify;
+        padding-top: 25px;
+    }
+    #project-row .p h2{
+        font-size: 30px;
+    }
+}
