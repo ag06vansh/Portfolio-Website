@@ -5,14 +5,14 @@
     font-family: cursive;
 }
 header{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: url('Images/background.jpg') no-repeat center center/cover;
     background-attachment: fixed;
 }
 nav{
-    width: 100%;
-    height: 70px;
+    width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,10 +44,10 @@ nav{
 }
 .text{
     color: white;
-    margin-top: 150px;
+    margin-top: 20vh;
     margin-left: 300px;
     margin-right: 300px;
-    max-width: 100%;
+    max-width: 100vw;
 }
 .text span{
     font-size: 50px;
@@ -97,9 +97,12 @@ nav{
     font-size: 25px;
     color: #e74c3c;
 }
+#about{
+    height: 100vh;
+}
 .about-row{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -107,27 +110,22 @@ nav{
     flex-basis: 30%;
 }
 .about-left-col img{
-    width: 70%;
-    /* padding-left: 100px; */
+    width: 21vw;
 }
 .about-right-col{
     flex-basis: 50%;
 }
-#p-title{
-    font-size: 30px;
-    color: #e74c3c;
-    font-weight: bold;
-}
 .about-right-col ul{
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 20px;
 }
 .about-right-col ul li{
-    padding: 10px;
+    padding: 5px;
     text-align: justify;
     font-weight: bold;
 }
 #skills{
+    height: 100vh;
     padding: 50px 50px;
     background: url('Images/bc.jpg') no-repeat center center/cover;
     color: white;
@@ -138,32 +136,16 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
-}
-.skills-left-col{
-    flex-basis: 50%;
-    text-align: center;
-}
-.skills-left-col ul{
-    font-size: 20px;
-    text-align: justify;
-}
-.skills-left-col ul li{
-    padding: 10px;
-}
-.skills-right-col{
-    flex-basis: 50%;
 }
 progress{
-    width: 80%;
+    width: 50vw;
 }
 .progress-div{
-    width: 90%;
-    margin: auto;
+    width: 70vw;
 }
 .progress-div p{
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
     padding-left: 80px;
 }
 
@@ -198,182 +180,25 @@ progress{
 #project-row .p h2{
     font-size: 30px;
 }
-
-#contact{
-    padding: 100px 50px;
+#footer{
+    height: 50vh;
+    color: white;
     background: url('Images/background.jpg') no-repeat center center/cover;
 }
-.contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-#contact h1{
-    color: white;
-}
-.contact-row form{
-text-align: center;
-}
-.contact-row form input{
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #862bdb;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-.contact-row form textarea{
-    width: 50%;
-    padding: 10px;
-    color: #862bdb;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 2px solid black;
+#footer-contact{
+    padding: 20px;
 }
 #social-media{
     display: flex;
-    padding-left: 100px;
+    justify-content: space-evenly;
 }
-#social-media a{
-    margin-left: 50px;
-    margin-top: 50px;
-}
-#one{
-    width: 200px;
-    height: 100px;
-}
-#two{
-    width: 300px;
-    height: 100px;
-}
-#three{
-    margin-top: 50px;
-    width: 250px;
-    height: 100px;
-}
-#social-media h2{
-    color: white;
-    padding-left: 50px;
+.contact-icon-size{
+    height: 10vh;
 }
 #social-media a img:hover{
     border: 5px solid black;
 }
-#footer{
-    background:url('Images/bc.jpg') no-repeat center center/cover;
-    color: #e74c3c;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
+#footer-developer-info{
+    padding: 10px;
     text-align: center;
-}
-
-@media only screen and (max-width: 770px)
-{
-    header{
-        background: url('Images/background.jpg');
-        background-size: cover;
-    }
-    .menu a{display: none;}
-    .logo{padding-left: 100px;}
-    .text{
-        color: white;
-        margin-top: 50px;
-        margin-left: 100px;
-        margin-right: 100px;
-        max-width: 100%;
-    }
-    #about h1{
-        font-size: 60px;
-        padding-left: 150px;
-        margin-bottom: 50px;
-        margin-top: 1px;
-    }
-    .about-left-col{
-        flex-basis: 100%;
-    }
-    .about-left-col img{
-        width: 100%;
-        padding-left:50px;
-    }
-    .about-right-col{
-        flex-basis: 100%;
-        padding-top: 50px;
-    }
-    .section-info h1{
-        font-size: 50px;
-        margin-bottom: 1px;
-    }
-    #skills{
-        padding: 50px 50px;
-    }
-    .skills-left-col{
-        flex-basis: 100%;
-    }
-    .skills-left-col ul{
-        margin-bottom: 30px;
-    }
-    .skills-right-col{
-        flex-basis: 100%;
-    }
-
-    progress{
-        width: 80%;
-    }
-    .progress-div{
-        width: 100%;
-        margin: auto;
-    }
-    .progress-div p{
-        margin-bottom: 10px;
-        font-size: 20px;
-        padding-left: 20px;
-    }
-
-    #project{
-        height: 180vh;
-    }
-    #project-row{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding:10px;
-    }
-
-    #project-row .p ul{
-        font-size: 20px;
-        text-align: justify;
-        padding-top: 25px;
-    }
-    #project-row .p h2{
-        font-size: 30px;
-    }
-    #social-media{
-        display: flex;
-        padding-left: 1px;
-    }
-    #social-media a{
-        margin-left: 30px;
-        margin-top: 50px;
-    }
-    #one{
-        width: 100px;
-        height: 50px;
-    }
-    #two{
-        width: 150px;
-        height: 50px;
-    }
-    #three{
-        margin-top: 50px;
-        width: 100px;
-        height: 50px;
-    }
-    #social-media h2{
-        color: white;
-        padding-left: 0px;
-        font-size: 20px;
-    }
 }
